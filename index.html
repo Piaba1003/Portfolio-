@@ -5,24 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio | Luis Gustavo</title>
 
-    <!--ESSA É A PONDE TEM LIGA O HTMAL AO SEU ARQUIVO CSS-->
+    <!--ESSA É A ONDE TEM LIGA O HTMAL AO SEU ARQUIVO CSS-->
     <link  rel="stylesheet" href="style.css">
 </head>
 <body>
    
+    <!-- CABEÇALHO -->
     <section class="hero">
-        <!-- CABEÇARIO -->
          <img src="perfil.png" alt="Foto do Luis Gustavo" class="foto_perfil">
          <h1>Luis Gustavo Araujo</h1>
-         <h2>Analisata de Sistema</h2>
+         <h2>Analista de Sistema</h2>
          <p>Bacharel em Sistemas de Informação e Analista de Suporte Pleno. Focado em infraestrutura de TI, garantindo a sustentação de sistemas complexos e entregando soluções operacionais robustas e de alta disponibilidade. </p>
         
-         <div class="bth-group">
+         <div class="btn-group">
             <a href="#projetos" class="btn btn-primary">Ver Projetos</a>    
             <a href="https://www.linkedin.com/in/luis-gustavo-araujo-ribeiro-0b997b293?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="btn btn-outline">Linkedin</a>
         </div>     
     </section>
     
+    <!-- HABILIDADES -->
     <section id="habilidades" class="secao">
         <h2 class="titulo-secao">Minhas Habilidades</h2>
         <div class="grid-cards">
@@ -34,13 +35,14 @@
                 <h3>UI/UX Design</h3>
                 <p>Análise de sistemas, suporte e estruturação de soluções tecnológicas focadas em eficiência.</p>
             </div>
-        <div class="card">
+             <div class="card">
             <h3>Infraestrutura de TI</h3>
             <p>Análise de sistemas, suporte e estruturação de soluções tecnológicas focadas em eficiência.</p>
             </div>
         </div> 
     </section>
 
+    <!-- PROJETOS -->
     <section id="projetos" class="secao">
         <h2 class="titulo-secao">Projetos em Destaque</h2>
         <div class="grid-cards">
@@ -51,5 +53,70 @@
             </div>
         </div>
     </section>   
- </body>
+
+    <!-- SEÇÃO DE CONTATO -->
+     <section id="contato" class="secao contato-container">
+        
+        <!-- Lado esquerdo: Textos e informações-->
+        <div class="contato-info">
+            <span class="tag-contato">CONTATO</span>
+            <h2 class="titulo-grande">Vamos colocar o proximo ambiente em movimento?</h2>
+            <p>Estou aberto a conversas sobre oportunidades em Infraestrutura, Front-end e UI/UX Design, além de projetos técnicos em que operação e tecnologia caminham juntas.</p>
+
+            <div class="info-itens">
+                <div class="item">
+                    <span>E-MAIL</span>
+                    <p>luisgustavoaraujoribeiro@gmail.com</p>
+                </div>
+                <div class="item">
+                    <span>TELEFONE</span>
+                    <p>(37) 9 9934-1164</p>
+                </div>
+                <div class="item">
+                    <span>LOCALIZAÇÃO</span>
+                    <p>Belo Horizonte, Minas Gerais</p>
+                </div>
+            </div>
+        </div>
+       
+        <!-- Lado direito: Formulário -->
+        <div class="contato-form">
+            <div class="form-header">
+                <h3>NOVA MENSAGEM</h3>
+                <span class="status-dot"></span>
+            </div>
+
+            <form action="https://formsubmit.co/luisgustavoaraujoribeiro@gmail.com" method="post">
+                <input type="hidden" name="_subject" value="Novo contato pelo Portfólio!">
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="input-group-duplo">
+                    <div class="input-box">
+                        <label>Seu nome</label>
+                        <input type="text" name="name" placeholder="Como devo chamar você?" required>
+                    </div>
+                    <div class="input-box">
+                        <label>Seu e-mail</label>
+                        <input type="email" name="email" placeholder="voce@empresa.com" required>
+                    </div>
+                </div>
+                
+                <div class="input-box">
+                    <label>Assunto</label>
+                    <input type="text" name="assunto" placeholder="Oportunidade, projeto ou conversa técnica" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Mensagem</label>
+                    <textarea name="mensagem" rows="5" placeholder="Conte um pouco de contexto ..." required></textarea>
+                
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                <p class="form-footer">Ao enviar, sua mensagem é processada pelo FormSubmit e encaminhada ao meu e-mail.</p>    
+            </form>
+        </div>
+    </section>
+    
+</body>
 </html>

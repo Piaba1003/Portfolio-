@@ -10,6 +10,7 @@ body {
     color: #ffffff;
 }
 
+/* --- hero (cabeçalho) --- */
 .hero {
     height: 100vh;
     display: flex;
@@ -29,12 +30,25 @@ body {
 .btn { padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1rem; transition: all 0.3s ease; }
 .btn-primary { background-color: #e94560; color: #ffffff; border: none; }
 .btn-primary:hover { background-color: #d13d56; transform: translateY(-2px); }
-.btn-outline {border: 2px solid #e94560;}
+.btn-outline { border: 2px solid #e94560;color: #ffffff}
 .btn-outline:hover { background-color: #e94560; color: #ffffff; transform: translateY(-2px); }
 
-.secao { padding: 80px 20px; background-color: #1a1a2e }
+/* --- FOTO DE PERFIL --- */
+.foto_perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #e94560;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* --- SEÇÕES PADRÃO --- */
+.secao { padding: 80px 20px; background-color: #1a1a2e; }
 .titulo-secao { text-align: center; font-size: 2.5rem; margin-bottom: 50px; color: #e94560; }
 
+/* --- CARDS LADO A LADO --- */
 .grid-cards {
     display: flex;
     justify-content: center;
@@ -55,21 +69,166 @@ body {
 
 .card:hover {
     transform: translateY(-10px);
-    border-bottom:3px solid #e94560;
+    border-bottom: 3px solid #e94560;
 }
 
 .card h3 { margin-bottom: 15px; color: #ffffff; }
 .card p { color: #a2a2bd; line-height: 1.5; margin-bottom: 15px; }
-.link-projeto { color:#e94560; text-decoration: none; font-weight: bold; }
+.link-projeto { color: #e94560; text-decoration: none; font-weight: bold; }
 .link-projeto:hover { text-decoration: underline; }
-/*Estilo da foto de perfil*/
-.foto_perfil {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: 3px solid #e94560;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+
+/* --- SEÇÃO DE CONTATO --- */
+.contato-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
+.contato-info { 
+    flex: 1;
+    min-width: 300px;
+}
+
+.tag-contato { 
+    color: #e94560;
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 2px;        
+}
+
+.titulo-grande { 
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.contato-info p { 
+    color: #a2a2bd;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.info-itens { 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item{
+    border-left: 1px solid #2a2a4a;
+    padding-left: 10px;
+}
+
+.item span { 
+    font-size: 0.7rem;
+    color:a2a2bd;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.item p { 
+    color: #ffffff;
+    margin:0;
+}
+
+/* --- FORMULÁRIO DE CONTATO --- */
+.contato-form { 
+    flex: 1;
+    min-width: 350px;
+    background-color: #16213e;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.form-header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.form-header h3 {
+    font-size: 0.8rem;
+    color: #a2a2bd;
+    letter-spacing: 2px;
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #00ff00;
+}
+
+.input-group-duplo {
+    display: flex;
+    gap: 20px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-box label {
+    font-size: 0.8rem;
+    color: #a2a2bd;     
+    margin-bottom: 8px;     
+}
+
+.input-box input, .input-box textarea {
+   background-color: #1a1a2e;
+   border: 1px solid #2a2a4a;
+   color: #ffffff;
+   padding: 12px;
+   border-radius: 5px;
+   font-family: inherit;
+}   
+
+.input-box input:focus, .input-box textarea:focus {
+    outline: none;
+    border-color: #e94560;
+}
+
+.btn-enviar {
+    background-color: #e94560;
+    color: #ffff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: fit-content;
+}
+
+.btn-enviar:hover {
+    background-color: #d13d56;
+}
+
+.form-footer {
+    font-size: 0.7rem;
+    color: #a2a2bd;
+    margin-top: 20px;
+}
+
+/*--- CORREÇÃO DE AUTO PREENCIMENTO (FUNDO BRANCO) ---*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill, 
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+    -webkit-text-fill-color: #ffffff !important;
+    -webkit-box-shadow: 0 0 0px 1000px #1a1a2e inset !important; 
+    transition: backgroud-color 5000s ease-in-out 0s;
+}
